@@ -1,4 +1,3 @@
-```markdown
 # Projet Deep Learning — Classification multimodale avec CrossViT (O1 → O5)
 
 ## 1. Présentation générale du projet
@@ -24,7 +23,6 @@ Le travail est structuré en **cinq objectifs expérimentaux (O1 à O5)**, chacu
 Structure typique du dépôt :
 
 ```
-
 ├── README.md
 ├── Notebook_Final_DL_Version_GoogleColab.ipynb
 ├── Notebook_Final_DL_Version_Locale_COMMENTE.ipynb
@@ -46,7 +44,7 @@ Structure typique du dépôt :
 │   └── val/
 │       ├── 0/
 │       └── 1/
-├── herbonaute_resized_224/ (dossier ou archive .zip)
+├── herbonaute_resized_224/
 │   ├── train/
 │   │   ├── 0/
 │   │   └── 1/
@@ -54,10 +52,8 @@ Structure typique du dépôt :
 │       ├── 0/
 │       └── 1/
 └── CrossViT/
-└── models/
-
+    └── models/
 ```
-
 - `Experiments/` contient l’ensemble des résultats et artefacts produits (courbes, historiques, checkpoints, tableaux).
 - `herbonaute/` contient les données prétraitées (voir section suivante).
 - `CrossViT/` contient les dépendances modèles nécessaires (si incluses dans le dépôt).
@@ -77,9 +73,7 @@ Les données proviennent du dataset **Herbonaute**, prétraité pour ce projet :
 - split **80 % / 20 %** en **train** et **val**.
 
 Les données sont organisées comme suit :
-
 ```
-
 herbonaute/herbonaute_resized_224/
 ├── train/
 │   ├── 0/
@@ -87,7 +81,6 @@ herbonaute/herbonaute_resized_224/
 └── val/
 ├── 0/
 └── 1/
-
 ```
 
 ### 3.2 Images segmentées et masques
@@ -329,4 +322,4 @@ Elle devient réellement pertinente lorsqu’elle est intégrée comme :
 - **contrainte d’alignement** (IoU, attention).
 
 Cette approche améliore l’interprétabilité mais introduit un compromis potentiel entre **stabilité d’entraînement** et **richesse du signal spatial**.
-```
+
